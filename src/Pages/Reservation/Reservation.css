@@ -1,0 +1,105 @@
+.reservation {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #f0faff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 200, 170, 0.2);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.reservation h1 {
+  text-align: center;
+  color: #0077cc;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.reservation h2 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #00c8aa;
+  border-left: 4px solid #00c8aa;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+.reservation p,
+.reservation li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.reservation strong {
+  color: #0077cc;
+}
+
+.reservation ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.reservation ul li {
+  padding: 0.4rem 0;
+}
+
+.reservation label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+}
+
+.reservation input[type="file"] {
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 0.5rem;
+}
+
+.reservation button {
+  margin-top: 2rem;
+  padding: 12px 24px;
+  background-color: #00ffc8;
+  color: #0077cc;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reservation button:hover {
+  background-color: #0077cc;
+  color: #00ffc8;
+  transform: scale(1.05);
+}
+
+.reservation p.error {
+  color: red;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .reservation {
+    padding: 1.5rem;
+  }
+
+  .reservation h1 {
+    font-size: 1.5rem;
+  }
+
+  .reservation h2 {
+    font-size: 1.2rem;
+  }
+
+  .reservation input[type="file"] {
+    max-width: 100%;
+  }
+}

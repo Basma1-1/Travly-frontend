@@ -1,0 +1,17 @@
+.about-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.about-container h1 {
+  color: #0077cc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

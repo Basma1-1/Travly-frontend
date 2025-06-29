@@ -1,0 +1,54 @@
+.dashboard-home {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #a8edea 0%,
+    #fed6e3 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #025099da;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.dashboard-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+
+.dashboard-home::before {
+  content: "✈️";
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 20px;
+  animation: fly 3s infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}

@@ -1,0 +1,87 @@
+.paiement {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #f0faff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 200, 170, 0.2);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.paiement h1 {
+  text-align: center;
+  color: #0077cc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.paiement p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #0077cc;
+  text-align: center;
+}
+
+.paiement p.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.paiement select,
+.paiement input[type="text"],
+.paiement input[type="email"] {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin: 0.6rem 0 1.2rem;
+  border: 1.5px solid #00c8aa;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.paiement select:focus,
+.paiement input[type="text"]:focus,
+.paiement input[type="email"]:focus {
+  border-color: #0077cc;
+}
+
+.paiement button {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 12px 30px;
+  background-color: #00ffc8;
+  color: #0077cc;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.paiement button:hover {
+  background-color: #0077cc;
+  color: #00ffc8;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .paiement {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .paiement h1 {
+    font-size: 1.5rem;
+  }
+
+  .paiement button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

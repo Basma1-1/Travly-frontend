@@ -1,0 +1,80 @@
+.dashboard-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; 
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.dashboard-content > :first-child {
+  width: 260px;
+  background: #e6e9ef; 
+  color: #555a66; 
+  box-shadow: 2px 0 12px rgba(0,0,0,0.07);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 16px 16px 0;
+}
+
+.main-content {
+  flex: 1;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  overflow-y: auto;
+  border-radius: 16px 0 0 16px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.03);
+  min-height: 0;
+  color: #222;
+}
+
+.dashboard-content > :first-child::-webkit-scrollbar,
+.main-content::-webkit-scrollbar {
+  width: 7px;
+}
+
+.dashboard-content > :first-child::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 90, 102, 0.15);
+  border-radius: 10px;
+}
+
+.dashboard-content > :first-child::-webkit-scrollbar-track,
+.main-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+
+  .dashboard-content > :first-child {
+    width: 100%;
+    height: 60px;
+    border-radius: 0;
+    box-shadow: none;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .main-content {
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    height: calc(100vh - 60px);
+  }
+}
+
+
+
+
+
+

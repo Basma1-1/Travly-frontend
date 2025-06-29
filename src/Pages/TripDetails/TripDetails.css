@@ -1,0 +1,168 @@
+.trip-details-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem 3rem;
+  background: #f0faff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 200, 170, 0.2);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  position: relative;
+}
+
+.trip-details-container h1 {
+  font-size: 2rem;
+  color: #0077cc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.trip-details-container h2 {
+  font-size: 1.3rem;
+  color: #00c8aa;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #00c8aa;
+  padding-left: 10px;
+}
+
+.trip-details-container p {
+  margin: 0.5rem 0;
+}
+
+.trip-details-container strong {
+  color: #0077cc;
+}
+
+.trip-details-container label {
+  display: block;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 1rem;
+  background: white;
+  border: 1px solid #00c8aa;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.trip-details-container label:hover {
+  background: #e6fdfb;
+  transform: scale(1.02);
+}
+
+.trip-details-container label.selected {
+  border: 2px solid #0077cc;
+  background-color: #e0f7ff;
+  transform: scale(1.02);
+}
+
+.trip-details-container input[type="radio"],
+.trip-details-container input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+}
+
+.trip-details-container button {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 12px 24px;
+  font-weight: bold;
+  background: #00ffc8;
+  color: #0077cc;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.trip-details-container button:hover {
+  background: #0077cc;
+  color: #00ffc8;
+  transform: scale(1.05);
+}
+
+.trip-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .trip-details-container {
+    padding: 1.5rem;
+  }
+
+  .trip-details-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .trip-details-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .trip-options {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-box {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+.loader,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  padding: 2rem;
+}
+
+.error {
+  color: red;
+}
+
+.summary-box {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+  background-color: #ffffff;
+  border: 2px solid #00c8aa;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 200, 170, 0.2);
+  font-size: 0.95rem;
+  z-index: 1000;
+}
+
+.summary-box h3 {
+  margin-bottom: 1rem;
+  color: #0077cc;
+  font-size: 1.1rem;
+}
+
+.summary-box p {
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+.voyage-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.hotel-image,
+.transport-image,
+.activity-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
