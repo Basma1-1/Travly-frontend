@@ -38,5 +38,8 @@ le projet est développé avec 'React' . IL permet aux utilisateurs de:
   # Technologies utilisées
 - React
 - React Router
-- CSS 
+- CSS
+
+  # Auteur
+  Basma LAGZAL
 
