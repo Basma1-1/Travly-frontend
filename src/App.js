@@ -17,6 +17,7 @@ import Confirmation from './Pages/Confirmation/Confirmation.jsx';
 import AboutUs from './Pages/AboutUs/AboutUs.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Footer from './Components/Footer/Footer.jsx';
+import MesReservations from './Pages/mesReservations.jsx';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -56,6 +57,7 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/admin/dashboard/*"element={ <PrivateRoute> <DashboardAdmin /> </PrivateRoute>} />
             <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/mes-reservations" element={<MesReservations />} />
           </Route>
         </Routes>
       </Router>

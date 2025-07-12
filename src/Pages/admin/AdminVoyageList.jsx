@@ -16,7 +16,14 @@ export default function AdminVoyageList() {
   async function fetchVoyages() {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8080/admin/voyage");
+      const token = localStorage.getItem('token');
+      const response = await fetch("http://localhost:8080/admin/voyage", {
+        headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+       },
+    });
+
       const body = await response.json();
 
       if (Array.isArray(body)) {

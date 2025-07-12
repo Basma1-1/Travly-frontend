@@ -11,7 +11,13 @@ export default function AdminVoyageEdit() {
     setLoading(true);
     async function fetchVoyage() {
       try {
-        const res = await fetch(`http://localhost:8080/admin/voyage/${id}`);
+        const token = localStorage.getItem("token");
+        const res = await fetch(`http://localhost:8080/admin/voyage/${id}`, {
+          headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        });
+        
         if (!res.ok) throw new Error("Erreur fetch voyage");
         const data = await res.json();
         setVoyage(data);

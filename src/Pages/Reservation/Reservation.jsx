@@ -66,9 +66,9 @@ export default function Reservation() {
       <h1>Réservation pour {state.voyage?.destination || "Destination inconnue"}</h1>
       <p><strong>Description :</strong> {state.voyage?.description || 'Aucune description'}</p>
       <p><strong>Départ :</strong> {state.voyage?.depart || 'N/A'}</p>
-      <p><strong>Date :</strong> 
+      <p><strong>Date : </strong> 
         de {state.voyage?.start_date 
-              ? new Date(state.voyage.start_date).toLocaleDateString()
+              ? new Date(state.voyage.start_date).toLocaleDateString()   
               : "N/A"}
         à {state.voyage?.end_date 
               ? new Date(state.voyage.end_date).toLocaleDateString()
@@ -81,12 +81,11 @@ export default function Reservation() {
           <h1>Hôtel :</h1> <br/>
           <strong> Nom: </strong> {state.hotel?.hotel_name} <br/>
           <strong> Address: </strong> {state.hotel?.address} <br/>
-          <strong> Date: </strong> de 
-            {state.hotel?.start_date
+          <strong> Date: </strong> 
+          de {state.hotel?.start_date
               ? new Date(state.hotel.start_date).toLocaleDateString() 
               : "N/A"}
-            à 
-            {state.hotel?.end_date
+          à  {state.hotel?.end_date
               ? new Date(state.hotel.end_date).toLocaleDateString() 
               : "N/A"} <br/>
          

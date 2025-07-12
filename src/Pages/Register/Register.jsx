@@ -43,51 +43,51 @@ function Register() {
   return (
     <div className="register-container">
       <form className="form-container" onSubmit={handleSubmit}>
-        <h2>Create Account</h2>
+        <h2>Créer un compte</h2>
 
-        <label>Username</label>
+        <label>Nom d'utilisateur</label>
         <div className="input-group">
           <FaUser className="icon" />
           <input
-            type="text" placeholder="Enter username" value={username} onChange={(e) => setUsername(e.target.value)} required
+            type="text" placeholder="Entrez votre nom" value={username} onChange={(e) => setUsername(e.target.value)} required
           />
         </div>
 
-        <label>Email</label>
+        <label>Adresse e-mail</label>
         <div className="input-group">
           <FaEnvelope className="icon" />
           <input
-            type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} required
+            type="email" placeholder="Entrez votre e-mail" value={email} onChange={(e) => setEmail(e.target.value)} required
           />
         </div>
 
-        <label>Password</label>
+        <label>Mot de passe</label>
         <div className="input-group">
           <FaLock className="icon" />
           <input
-            type="password" placeholder="Enter password" value={password}  onChange={(e) => setPassword(e.target.value)}  required
+            type="password" placeholder="Entrez votre mot de passe" value={password}  onChange={(e) => setPassword(e.target.value)}  required
           />
         </div>
 
-        <label>Confirm Password</label>
+        <label>Confirmer le mot de passe</label>
         <div className="input-group">
           <FaLock className="icon" />
           <input
-            type="password" placeholder="Repeat password" value={confirm} onChange={(e) => setConfirm(e.target.value)}  required
+            type="password" placeholder="Répétez le mot de passe" value={confirm} onChange={(e) => setConfirm(e.target.value)}  required
           />
         </div>
 
-        <button type="submit" className="register-btn">Register</button>
+        <button type="submit" className="register-btn">S'inscrire</button>
 
         <p className="login-link">
-          Already have an account? <Link to="/login">Log in</Link>
+          Vous avez déjà un compte ? <Link to="/login">Se connecter</Link>
         </p>
       </form>
 
       <div className="welcome-container">
         <img src="/images/illustration.svg" alt="Welcome" className="welcome-image" />
-        <h3>Welcome to Travly!</h3>
-        <p>Join us and start your adventure today.</p>
+        <h3>Bienvenue sur Travly !</h3>
+        <p>Rejoignez-nous et commencez votre aventure dès aujourd'hui.</p>
       </div>
     </div>
   );

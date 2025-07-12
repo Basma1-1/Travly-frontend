@@ -56,7 +56,7 @@ function Login() {
   return (
     <>
     <div className="login-container">
-      <h2>Login</h2>
+      <h2>Connexion</h2>
 
       {location.state?.from && (
         <p style={{ color: 'red', marginBottom: '1rem' }}>
@@ -68,22 +68,22 @@ function Login() {
         <div className="input-group">
           <FaEnvelope className="icon" />
           <input
-            type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required
+            type="email" placeholder="Adresse e-mail" value={email} onChange={(e) => setEmail(e.target.value)} required
           />
         </div>
 
         <div className="input-group">
           <FaLock className="icon" />
           <input
-            type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required
+            type="password" placeholder="Mot de passe" value={password} onChange={(e) => setPassword(e.target.value)} required
           />
         </div>
 
-        <button type="submit" className="login-btn">Log in</button>
+        <button type="submit" className="login-btn">Se connecter</button>
       </form>
 
       <p className="register-link">
-        Don't have an account? <Link to="/register">Sign up</Link>
+        Vous n'avez pas de compte ?  <Link to="/register">Inscrivez-vous</Link>
       </p>
     </div>
     </>

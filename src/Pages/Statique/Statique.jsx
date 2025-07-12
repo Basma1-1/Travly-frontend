@@ -10,7 +10,20 @@ export default function Statique() {
   useEffect(() => {
     async function fetchStats() {
       try {
-        const res = await fetch("http://localhost:8080/admin/stats");
+        const token = localStorage.getItem('token');
+
+        const res = await fetch("http://localhost:8080/admin/stats", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json"
+        }
+      });
+
+      if (!res.ok) {
+        console.error("Erreur lors de la récupération des stats", res.status);
+        return;
+      } 
+
         const data = await res.json();
         setStats(data);
       } catch (err) {

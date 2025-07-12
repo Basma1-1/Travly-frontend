@@ -102,12 +102,11 @@ const handleConfirm = async () => {
       <p><strong>Description :</strong> {state.voyage?.description}</p>
       <p><strong>Depart :</strong> {state.voyage?.depart}</p>
       <p><strong>Destination :</strong> {state.voyage?.destination}</p>
-      <p><strong>Date :</strong> de 
-        {state.voyage?.start_date 
+      <p><strong>Date :</strong> 
+      de {state.voyage?.start_date 
           ? new Date(state.voyage.start_date).toLocaleDateString() 
           : "N/A"} 
-        à 
-        {state.voyage?.end_date 
+      à {state.voyage?.end_date 
           ? new Date(state.voyage.end_date).toLocaleDateString() 
           : "N/A"}
       </p>
@@ -115,12 +114,11 @@ const handleConfirm = async () => {
       <h3>Hôtel</h3>
       <p><strong> Nom: </strong> {state.hotel?.hotel_name}  </p>
       <p><strong> Address: </strong> {state.hotel?.address} </p>
-      <p><strong> Date: </strong> de 
-        {state.hotel?.start_date
+      <p><strong> Date: </strong> 
+      de {state.hotel?.start_date
           ? new Date(state.hotel.start_date).toLocaleDateString() 
           : "N/A"}
-        à 
-        {state.hotel?.end_date
+      à {state.hotel?.end_date
           ? new Date(state.hotel.end_date).toLocaleDateString() 
           : "N/A"}
          </p>
@@ -195,8 +193,8 @@ const handleConfirm = async () => {
       {showCancelConfirm && (
         <div className="popup">
           <p>Voulez-vous vraiment annuler votre réservation ?</p>
-          <button onClick={confirmCancel}>Ok</button>
-          <button onClick={cancelCancel}>Cancel</button>
+          <button onClick={confirmCancel}> OUI </button>
+          <button onClick={cancelCancel}> NON </button>
         </div>
       )}
     </div>

@@ -24,43 +24,43 @@ function Destination() {
         }
       });
     } else {
-      alert("Please fill in at least a destination or a date.");
+      alert("Veuillez remplir au moins une destination ou une date.");
     }
   };
 
   return (
     <>
     <div className="intro-message">
-      <span className="welcome-word">Welcome!</span>
-      <span className="dream-text">Your dream destination awaits.</span>
+      <span className="welcome-word">Bienvenue!</span>
+      <span className="dream-text">Votre destination de rêve vous attend.</span>
     </div>
 
     <div className="destination-container">
-      <h1>Plan Your Trip</h1>
+      <h1>Planifiez votre voyage</h1>
       
       <form className="destination-form" onSubmit={handleSubmit}>
         <label>
-          Current Location:
+          Localisation actuelle:
           <input
             type="text"
-            placeholder="Your current location"
+            placeholder="Votre position actuelle"
             value={currentLocation}
             onChange={(e) => setCurrentLocation(e.target.value)}
           />
         </label>
 
         <label>
-          Desired Destination:
+          Destination souhaitée:
           <input
             type="text"
-            placeholder="Your destination"
+            placeholder="Votre destination"
             value={desiredDestination}
             onChange={(e) => setDesiredDestination(e.target.value)}
           />
         </label>
 
         <label>
-          Travel Date:
+          Date de voyage:
           <input
             type="date"
             value={travelDate}
@@ -69,16 +69,16 @@ function Destination() {
         </label>
 
         <label>
-          Maximum Price:
+          Prix maximum:
           <input
             type="number"
-            placeholder="Max price in €"
+            placeholder="Prix max en €"
             value={maxPrice}
             onChange={(e) => setMaxPrice(e.target.value)}
           />
         </label>
 
-        <button type="submit">Search</button>
+        <button type="submit">Rechercher</button>
       </form>
     </div>
      </>
